@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "engines": { "node": "18.x" },
-  "scripts": {
-    "server": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "type": "commonjs",
+    "scripts": {
+    "server": "nodemon server.js"
   },
   "keywords": [],
   "author": "ocesar9",
