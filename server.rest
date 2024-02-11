@@ -1,0 +1,35 @@
+###
+GET http://localhost:3000/users 
+
+###
+POST http://localhost:3000/users 
+Content-Type: application/json
+
+{  
+    "email":"juliocesaoguimaraes@gmail.com",
+    "password":"120083matueBMTH"
+}
+
+###
+POST http://localhost:3000/users/login
+Content-Type:  application/json
+
+{  
+    "email":"juliocesaoguimaraes@gmail.com",
+    "password":"120083matueBMT"
+}
+
+###
+DELETE http://localhost:3000/users?email=juliocesaoguimaraes@gmail.com
+
+
+####
+POST http://localhost:3000/mail/send
+Content-Type: application/json
+
+{
+    "emailFrom":"marketstore@resend.dev",
+    "emailTo":"juliocesaoguimaraes@gmail.com",
+    "subject":"Check all items from your shopping cart",
+    "html": "<h1>Hello World!</h1>"
+}
